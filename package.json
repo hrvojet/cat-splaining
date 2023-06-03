@@ -5,5 +5,11 @@
   "main": "index.js",
   "author": "Hrvoje Trčak",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "inline-css": "^4.0.2"
+  },
+  "devDependencies": {
+    "pagecrypt": "^6.1.0"
+  }
 }
