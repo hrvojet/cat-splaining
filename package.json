@@ -1,0 +1,9 @@
+{
+  "name": "cat-splaining",
+  "version": "1.0.0",
+  "description": "Static website which contains description on how to handle our two cats",
+  "main": "index.js",
+  "author": "Hrvoje Trčak",
+  "license": "MIT",
+  "private": true
+}
