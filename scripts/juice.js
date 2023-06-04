@@ -1,7 +1,7 @@
 let juice = require('juice');
-const fs = require("fs");
+const fs = require('fs');
 
-const htmlPath = '../public/index.html';
+const htmlPath = '../src/index.html';
 
 try {
     process.chdir('./scripts');
@@ -18,7 +18,7 @@ juice.juiceFile(
         if (err) {
             console.log(err);
         } else {
-            fs.writeFileSync('../index.html', html, function (err) {
+            fs.writeFileSync('../plain-index.html', html, function (err) {
                 if (err) {
                     console.log('Error writing to file!');
                     console.error(err);

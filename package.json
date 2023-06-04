@@ -3,18 +3,22 @@
   "version": "1.0.0",
   "description": "Static website which contains description on how to handle our two cats",
   "scripts": {
-    "start": "http-server -p 4200",
-    "build": "node ./scripts/juice.js"
+    "start": "node ./scripts/live-server.js",
+    "build": "node ./scripts/juice.js",
+    "encrypt": "pagecrypt plain-index.html index.html"
   },
   "author": "Hrvoje Trčak",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "inline-css": "^4.0.2",
-    "juice": "^9.0.0"
+    "juice": "^9.0.0",
+    "live-server": "^1.2.2"
   },
   "devDependencies": {
-    "http-server": "^14.1.1",
     "pagecrypt": "^6.1.0"
+  },
+  "nodemonConfig": {
+    "ext": "js, html"
   }
 }
