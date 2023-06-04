@@ -1,5 +1,6 @@
-let juice = require('juice');
-const fs = require('fs');
+import pkg from 'juice';
+const { juiceFile } = pkg;
+import * as fs from 'fs';
 
 const htmlPath = '../src/index.html';
 
@@ -11,7 +12,7 @@ catch (err) {
     console.error('chdir: ' + err);
 }
 
-juice.juiceFile(
+juiceFile(
     htmlPath,
     {},
     function(err, html){

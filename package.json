@@ -4,13 +4,13 @@
   "description": "Static website which contains description on how to handle our two cats",
   "scripts": {
     "start": "node ./scripts/live-server.js",
-    "build": "node ./scripts/juice.js",
-    "encrypt": "pagecrypt plain-index.html index.html"
+    "build": "node ./scripts/juice.js && node ./scripts/pagecrypt.js && node ./scripts/cleanup.js"
   },
   "author": "Hrvoje Trčak",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "dotenv": "^16.1.3",
     "inline-css": "^4.0.2",
     "juice": "^9.0.0",
     "live-server": "^1.2.2"
@@ -18,7 +18,5 @@
   "devDependencies": {
     "pagecrypt": "^6.1.0"
   },
-  "nodemonConfig": {
-    "ext": "js, html"
-  }
+  "type": "module"
 }
