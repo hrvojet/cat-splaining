@@ -7,9 +7,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "inline-css": "^4.0.2"
+    "inline-css": "^4.0.2",
+    "juice": "^9.0.0"
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "pagecrypt": "^6.1.0"
   }
 }
