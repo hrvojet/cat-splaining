@@ -2,7 +2,10 @@
   "name": "cat-splaining",
   "version": "1.0.0",
   "description": "Static website which contains description on how to handle our two cats",
-  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 4200",
+    "build": "node ./scripts/juice.js"
+  },
   "author": "Hrvoje Trčak",
   "license": "MIT",
   "private": true,
